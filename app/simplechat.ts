@@ -94,10 +94,10 @@ export default async function screen(minitel:MinitelTS, route:MinitelTSRoute) {
         }
         minitel.bip();
     } catch (error) {
-        if (error instanceof Error && error.message === 'KEY:SOMMAIRE') {
+        if (error instanceof Error && error.message === 'KEY:REPETITION') {
             userInput = '';
             setState({ userInput: '', messages: [] });
-        } else if (error instanceof Error && error.message === 'KEY:GUIDE') {
+        } else if (error instanceof Error && error.message === 'KEY:SOMMAIRE') {
             userInput = '';
             setState({ userInput: '', messages: [] });
             minitel.router.goto('index');

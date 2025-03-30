@@ -8,10 +8,10 @@ export function printUser(output, name:string) {
 }
 
 export function catchError(error:Error, setState:Function, setStore:Function, minitel:MinitelTS) {
-  if (error instanceof Error && error.message === 'KEY:SOMMAIRE') {
+  if (error instanceof Error && error.message === 'KEY:REPETITION') {
       setState({ messages: [], initialAnswer: false });
       // setStore({ userName: '' });
-  } else if (error instanceof Error && error.message === 'KEY:GUIDE') {
+  } else if (error instanceof Error && error.message === 'KEY:SOMMAIRE') {
       setState({ messages: [], initialAnswer: false });
       setStore({ userName: '' });
       console.log('GOING TO INDEX');

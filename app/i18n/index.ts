@@ -33,7 +33,7 @@ export default async function screen(minitel:MinitelTS, route:MinitelTSRoute) {
         minitel.bip();
     } 
   } catch (error) {
-    if (error instanceof Error && error.message === 'KEY:GUIDE') {
+    if (error instanceof Error && error.message === 'KEY:SOMMAIRE') {
       console.log('GOING TO INDEX');
       minitel.router.goto('index');
   } else {
