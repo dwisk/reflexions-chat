@@ -1,0 +1,12 @@
+{
+  "hello": "Hallo",
+  "welcome": "Welcome to Minitel TS with GPT!",
+  "choose": "Choose what you want to do:",
+  "langswitch": {
+    "choose": "Choose your language",
+    "languages": {
+      "en": "English",
+      "de": "Deutsch"
+    }
+  }
+}

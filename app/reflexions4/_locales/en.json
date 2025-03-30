@@ -1,0 +1,20 @@
+{
+  "name": "Reflexions V4",
+  "welcome": "This is a space for self-reflection and exploration. Here, you can ask questions and receive thoughtful responses. You can also share your thoughts and feelings with me.",
+  "askForName": "To start, please tell me your name and press ENTER or ENVOI",
+  "initialQuestion": "What do you want to learn about yourself?",
+  "questions": [
+    "Am I reacting or responding?",
+    "Do I want to be right, or do I want to understand?",
+    "Is my heart heavy or my head full?",
+    "Am I thinking too much, or feeling too much?",
+    "What part of me is speaking right now?"
+  ],
+  "prompts": [
+    "The user is reflecting on the difference between emotional reaction and thoughtful response. Invite them to explore what triggered this question. Gently help them notice what part of them is acting right now.",
+    "The user is questioning their internal motivation—ego-driven certainty vs. a deeper desire for understanding. Help them pause in that space and consider what it feels like to let go of being right.",
+    "The user is sensing tension in their emotional or mental space. Guide them inward: ask where they feel the weight, and what might need attention or release.",
+    "The user is caught between emotion and overthinking. Invite them to describe their current experience. Reflect which voice seems louder, and ask what the quieter one might be saying.",
+    "The user is opening a moment of self-inquiry. Encourage them to listen inwardly. Help them explore whether it’s the protector, the wounded self, the thinker, the child—or something else entirely."
+  ]
+}

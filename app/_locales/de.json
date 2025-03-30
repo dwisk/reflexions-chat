@@ -1,0 +1,11 @@
+{
+  "hello": "Hallo",
+  "choose": "Was willst du machen?",
+  "langswitch": {
+    "choose": "Sprache wählen",
+    "languages": {
+      "en": "English",
+      "de": "Deutsch"
+    }
+  }
+}
