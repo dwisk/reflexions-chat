@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "cp -R app ./build && tsc",
+    "build": "cp -R app ./build && find build -type f -name '*.ts' -delete && tsc",
     "start": "npm run build && node build/app.js"
   },
   "type": "module",
