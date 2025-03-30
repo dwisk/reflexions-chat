@@ -1,11 +1,5 @@
 {
   "hello": "Hallo",
-  "choose": "Was willst du machen?",
-  "langswitch": {
-    "choose": "Sprache wählen",
-    "languages": {
-      "en": "English",
-      "de": "Deutsch"
-    }
-  }
+  "welcome": "Willkommen beim Minitel TS mit GPT!",
+  "choose": "Was willst du machen?"
 }
