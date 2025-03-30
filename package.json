@@ -1,9 +1,9 @@
 {
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "build": "tsc",
-    "test": "jest"
+    "build": "cp -R app ./build && tsc",
+    "start": "npm run build && node build/app.js"
   },
+  "type": "module",
   "dependencies": {
     "colors": "^1.4.0",
     "dotenv": "^16.4.7",
@@ -13,6 +13,7 @@
     "typescript": "^5.8.2"
   },
   "devDependencies": {
+    "@types/i18n": "^0.13.12",
     "@types/react": "^19.0.12"
   }
 }

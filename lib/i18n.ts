@@ -4,10 +4,10 @@ import fs from 'fs';
 
 const appDir = path.join(path.dirname(process.argv[1]), 'app');
 
-const staticCatalog = {};
+const staticCatalog: Record<string, any> = {};
 
 function loadCatalogFromDir(dir: string = '') {
-  const catalog = {};
+  const catalog: Record<string, any> = {};
   const pathName = path.join(appDir, dir, '/_locales');
   if (!fs.existsSync(pathName)) {
     return;
@@ -44,7 +44,6 @@ dirs.forEach((dir) => {
   }
   loadCatalogFromDir(dir);
 });
-
 
 i18n.configure({
   locales: ['en', 'de'],

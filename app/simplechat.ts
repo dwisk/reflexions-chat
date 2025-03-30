@@ -2,6 +2,7 @@ import MinitelTS from "minitel.ts";
 import OpenAI from 'openai';
 import type { MinitelTSRoute } from "minitel.ts/types";
 import 'colors';
+import MinitelTSWrite from "minitel.ts/write";
 
 export const initialState =  { userInput: '', messages:[] };
 const client = new OpenAI();
@@ -102,12 +103,16 @@ export default async function screen(minitel:MinitelTS, route:MinitelTSRoute) {
             setState({ userInput: '', messages: [] });
             minitel.router.goto('index');
         } else {
-            console.log('INPUT ERROR:', error.message);
+            if (error instanceof Error) {
+                console.log('INPUT ERROR:', error.message);
+            } else {
+                console.log('INPUT ERROR:', error);
+            }
         }
     }
 }
 
-function printUser(output, name:string) {
+function printUser(output:MinitelTSWrite, name:string) {
     output.inverse(true)
     output.print(name);
     output.inverse(false)

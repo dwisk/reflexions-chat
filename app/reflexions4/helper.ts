@@ -1,6 +1,7 @@
 import MinitelTS from "minitel.ts";
+import MinitelTSWrite from "minitel.ts/write";
 
-export function printUser(output, name:string) {
+export function printUser(output:MinitelTSWrite, name:string) {
   output.inverse(true)
   output.print(name);
   output.inverse(false)

@@ -1,6 +1,6 @@
 import MinitelTS from 'minitel.ts'; // Ensure the package is installed and the path is correct
 import 'dotenv/config'
-import './lib/i18n.ts';
+import './lib/i18n.js';
 
 const minitel = new MinitelTS();
 await minitel.init();

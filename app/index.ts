@@ -1,6 +1,6 @@
 import MinitelTS from "minitel.ts";
 import type { MinitelTSRoute } from "minitel.ts/types";
-import i18n from "../lib/i18n.ts";
+import i18n from "../lib/i18n.js";
 
 export const initialState =  {userInput: '...'};
 

@@ -2,9 +2,9 @@ import MinitelTS from "minitel.ts";
 import OpenAI from 'openai';
 import type { MinitelTSRoute } from "minitel.ts/types";
 import 'colors';
-import i18n from "../../lib/i18n.ts";
-import { parseMultipleChoice } from "./ui-multiplechoice.ts";
-import { catchError, printUser } from "./helper.ts";
+import i18n from "../../lib/i18n.js";
+import { parseMultipleChoice } from "./ui-multiplechoice.js";
+import { catchError, printUser } from "./helper.js";
 import fs from 'fs';
 
 export const initialState =  { initialAnswer: false, messages:[] };
@@ -48,7 +48,7 @@ export default async function screen(minitel:MinitelTS, route:MinitelTSRoute) {
             setStore({ userName: titleName });
             minitel.bip();
         } catch (error) {
-            catchError(error, setState, setStore, minitel);
+            catchError(error as Error, setState, setStore, minitel);
         }
 
         return;
@@ -59,17 +59,17 @@ export default async function screen(minitel:MinitelTS, route:MinitelTSRoute) {
         output.newLine();
         output.newLine();
 
-        const questions = i18n.__('reflexions4.questions');
+        const questions = i18n.__('reflexions4.questions') as any;
         const prompts = i18n.__('reflexions4.prompts');
 
         let choice;
         try {
-            choice = await input.multipleCoice(i18n.__('reflexions4.initialQuestion'), questions.map((question,id) => ({
+            choice = await input.multipleCoice(i18n.__('reflexions4.initialQuestion'), questions.map((question:string,id:number) => ({
                 label: question,
                 value: prompts[id]
             })));
         } catch (error) {
-            catchError(error, setState, setStore, minitel);
+            catchError(error as Error, setState, setStore, minitel);
             return;
         }
 
@@ -163,7 +163,7 @@ export default async function screen(minitel:MinitelTS, route:MinitelTSRoute) {
         }
         minitel.bip();
     } catch (error) {
-        catchError(error, setState, setStore, minitel);
+        catchError(error as Error, setState, setStore, minitel);
     }
 }
 

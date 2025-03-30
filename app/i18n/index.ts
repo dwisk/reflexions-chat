@@ -1,6 +1,6 @@
 import MinitelTS from "minitel.ts";
 import type { MinitelTSRoute } from "minitel.ts/types";
-import i18n from "../../lib/i18n.ts";
+import i18n from "../../lib/i18n.js";
 
 export const initialState =  {userInput: '...'};
 export const name = "Language / Sprache";
@@ -37,7 +37,7 @@ export default async function screen(minitel:MinitelTS, route:MinitelTSRoute) {
       console.log('GOING TO INDEX');
       minitel.router.goto('index');
   } else {
-      console.log('INPUT ERROR:', error.message);
+      console.log('INPUT ERROR:', error instanceof Error ? error.message : String(error));
   }
     minitel.bip();
   }

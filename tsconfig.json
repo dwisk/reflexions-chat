@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    // "allowImportingTsExtensions": true,
+    "outDir": "./build",
+    // "rootDir": "./lib"
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "build"]
+}
