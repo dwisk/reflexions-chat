@@ -1,4 +1,6 @@
 {
+  "welcome": "Dies ist ein Raum für Selbstreflexion und Erkundung. Hier kannst du Fragen stellen und aufmerksame Antworten erhalten. Du kannst auch deine Gedanken und Gefühle mit mir teilen.",
+  "askForName": "Um zu beginnen, sag mir bitte deinen Namen und drück ENTER oder ENVOI",
   "initialQuestion": "Was möchtest du über dich selbst lernen?",
   "questions": [
     "Reagiere ich oder antworte ich?",
