@@ -24,6 +24,9 @@ DEFAULT_LANG=en # preselected language
 ```
 
 ## Run
-```
-node app.ts
+```bash
+npm run build # creates js build
+npm run start # runs js build
+
+npm run dev # builds & starts
 ```
